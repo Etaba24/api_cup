@@ -18,7 +18,7 @@ class Groupe(models.Model):
     def __str__(self):
         return f"Groupe {self.nom}"
 
-class Match(models.Model): #et tu ne veux pas fom??
+class Match(models.Model): 
     equipe1 = models.ForeignKey(Equipe, related_name='matchs_equipe1', on_delete=models.CASCADE)
     equipe2 = models.ForeignKey(Equipe, related_name='matchs_equipe2', on_delete=models.CASCADE)
     date = models.DateTimeField(null=True, blank=True)
