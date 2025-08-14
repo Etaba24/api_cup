@@ -2,7 +2,7 @@ import random
 from .models import Equipe, Groupe, Match
 from django.utils import timezone
 
-
+# la fonction qui gere la repartition des equipes
 def repartir_equipes_en_groupes(nb_groupes):
     # Récupérer toutes les équipes
     toutes_equipes = list(Equipe.objects.all())
